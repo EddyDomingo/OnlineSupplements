@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+ 
+  .imgHoover:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  }
+
+  .imgHoover {  
+      padding: 10px 16px;
+      margin: 10px 0;
+      /*box-shadow: 2px 2px grey;*/
+      border-bottom: 1px solid #fafafa;
+      /*border: 5px solid #fab95b;*/
+
+  }
+
+  #form1 {
+    padding: 10px;
+    border: 1px solid #666;
+    background: #fff;
+    display: none;
+    justify-content: center;
+  }
+
+  #form2 {
+    padding: 10px;
+    border: 1px solid #666;
+    background: #fff;
+    justify-content: center;
+  }
+
+  /* card center */
+
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    /*box-shadow: 5px 5px grey*/
+}
+
+.card:hover {
+  box-shadow: 4px 8px 12px rgba(0,0,0,0.1);
+}
+
+  /* side-nav */
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #818181;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
